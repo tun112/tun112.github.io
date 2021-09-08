@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <fieldset>
+        <legend>Personal Info</legend>
+         <input type="hidden" name="id" value="45">
+        <label for="name">Name</label>
+
+        <input type="text" name="Name" id="name" minlength="5" maxlength="50">
+        <br>
+        <label for="address:">Address</label>
+        <br>
+        
+        <textarea name="address" id="address:" cols="20" rows="3"></textarea>
+        <form action="action.php" method ="GET" enctype="multipart/form-data">
+        <input type="text" name="voucher_id" id="" value="123" readonly = "readonly">
+
+    </fieldset>
+        
+
+       <label for="">Interests</label>
+       <label for="html">HTML</label>
+       <input type="checkbox" name="html" id="html" checked ="checked">
+
+       <label for="css">CSS</label>
+       <input type="checkbox" name="CSS" id="css">
+
+       <label for="js">Js</label>
+       <input type="checkbox" name="Js" id="js"><br>
+
+        <label for="">Gender</label>
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value = "male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value = "female">
+
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value = "other">
+        <br>
+
+        <label for="city">City</label>
+        <select name="city" id="city"  multiple = "multiple">
+            <option value="1">Yangon</option>
+            <option value="2" selected = "selected">Mandalay</option>
+            <option value="3">NayPyiDaw</option>+
+        </select>
+
+        <br>
+        <label for="file">File</label>
+        <input type="file" name="photo" id="file">
+        <br>
+
+
+        <label for="age">age</label>
+        <input type="number" name="age" id="age" step="2" min="16" max="23">
+        <br>
+         
+        <label for="height">Height</label>
+       <input type="number" name="height" id="height" step = "0.1">
+        <br>
+        <label for="range">sakaryRange</label>
+        <input type="range" name="salaryRange" id="range">100
+        <label for="birthday">BirthDay</label>
+        <input type="date" name="dob" id="birthday" >
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vk8UEWHYfEg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+       <input type="submit" value="Register">
+       <input type="reset" value="Clear">
+
+       <input type="button" value="button">
+       <button>button2</button>
+        
+
+
+
+</form>
+</body>
+</html>
