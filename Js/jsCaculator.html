@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Calculator</title>
+</head>
+<body>
+    
+    <h3>JS Calculator</h3>
+    
+    <label for="firstNumber">FirstNumber</label>
+    <input type="number" name="firstNumber" id="firstNumber"><br>
+    <label for="secondNumber">SecondNumber</label>
+    <input type="number" name="secondNumber" id="secondNumber"><br>
+    <button onclick="calculate()">Caculate</button>
+    <label id="result"></label>
+    
+<script>
+     function calculate(){
+        let firstNumber =parseInt( document.querySelector("#firstNumber").value);
+        let secondNumber = parseInt(document.querySelector("#secondNumber").value);
+        console.log(firstNumber,secondNumber);
+        
+        let sum = firstNumber+secondNumber;
+        let sub = firstNumber-secondNumber;
+        let mul = firstNumber*secondNumber;
+        let div = firstNumber/secondNumber;
+        let mod = firstNumber % secondNumber;
+        let result = `sum :${sum} <br> sub :${sub} <br> mul :${mul} <br> div :${div.toFixed(2)} <br>mod : ${mod}` 
+        console.log(result);
+        document.querySelector("#result").innerHTML=result;
+     }
+    
+    
+     
+     function aa(){
+        let firstNumber = parseInt(prompt('Enter first Number'));
+        let secondNumber = parseInt(prompt("Enter second number"));
+        console.log(firstNumber,secondNumber);
+        
+        let sum = firstNumber+secondNumber;
+        let sub = firstNumber-secondNumber;
+        let mul = firstNumber*secondNumber;
+        let div = firstNumber/secondNumber;
+        let mod = firstNumber % secondNumber;
+        console.log(sum,sub,mul,div,mod)
+        document.write( ` First Number : ${firstNumber}`);
+        document.write( ` SecondNumber : ${secondNumber}`);
+        document.write(`Sum : ${sum} <br>`);
+        document.write(`Sum : ${sub} <br>`);
+        document.write(`Sum : ${mul}<br>`);
+        document.write(`Sum : ${div.toFixed(2)} <br> `);
+        document.write(`Sum : ${mod}`);
+     }
+    </script>
+        
+
+   
+</body>
+</html>
