@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Class</title>
+</head>
+<body>
+    <h3>Js Class</h3>
+    <script>
+
+        const ford = {
+            brand : 'ford',
+            model : 'EcoSport',
+
+        }
+        const toyo = {
+            brand : 'toyota',
+            model : 'Cross'
+        }
+        const honda = {
+            brand : 'honda',
+            model : 'Fit'
+        }
+        class Car{
+            brand ;
+            model;
+            showData(){
+                console.log(`${this.brand }  ${this.model}`);
+            }
+        }
+        const nissan = new Car();
+        const fiet = new Car();
+        console.log(nissan);
+        console.log(fiet);
+
+        nissan.brand = "Nissan";
+        nissan.model = "sunny";
+        fiet.brand = "fiet";
+        fiet.model = "panda"
+        console.log(nissan,fiet);
+        nissan.showData();
+        fiet.showData();
+
+        class Person{
+            constructor(name,city){
+                this.name = name;
+                this.city = city;
+            }
+            showData(){
+                console.log(`My name is ${this.name} and I am from ${this.city}`);
+            }
+            static SayHi(){
+                console.log("hi from person static method");
+            }
+        }
+        Person.SayHi();
+            const mgmg = new Person("mgmg","Yangon")
+            console.log(mgmg);
+            const mama = new Person ("mama","mandalay")
+            console.log(mama.showData());
+        
+
+            class Programmer extends Person{
+                constructor(name,city,laptop){
+                    super(name,city);
+                    this.laptop=laptop;
+                }
+                showData(){
+                    super.showData();
+                    console.log(`my laptop is ${this.laptop}`);
+                }
+
+            }
+            const john = new Programmr('John',"Taunggyi","Acer")
+            john.showData()
+
+    </script>
+</body>
+</html>

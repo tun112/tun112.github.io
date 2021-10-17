@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.logo {
+  margin-left: 40px;
+  width: 110px;
+  height: 100px;
+  display: block;
+}
+.nav_background {
+  background-color: black;
+}
+.nav_brands {
+  display: inline-block;
+}
+.nav_background ul {
+  float: right;
+}
+.nav_background ul li {
+  margin-right: 40px;
+  padding-top: 20px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+}
+.brand_name {
+  color: white;
+  margin-left: 50px;
+  font-family: great;
+}
+.nav_background ul li:hover {
+  color: yellow;
+  transform: translate(2px, -2px);
+  transition: 0.3s;
+}
+.background {
+  background-color: black;
+  height: px;
+}
+
+footer.footer {
+  background-color: black;
+  color: white;
+  height: 90px;
+}
+footer.footer a {
+  float: right;
+  margin-top: 26px;
+  margin-right: 30px;
+  color: gold;
+}
+footer.footer p {
+  margin-top: 35px;
+  display: inline-block;
+  margin-left: 30px;
+}
+/* about background */
+.about-background1 {
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+}
+.about-background2 {
+  width: 96%;
+  background-color: white;
+  height: ;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 27px;
+}
+.for-background-style {
+  background-color: black;
+  height: 1500px;
+  width: 97.5%;
+  margin-left: 25px;
+}
+.for-inf {
+  color: white;
+  position: relative;
+  left: 1000px;
+  top: -420px;
+}
+.for-inf2 {
+  font-size: 25px;
+  line-height: 30px;
+  width: 646px;
+  color: white;
+  position: relative;
+  left: 960px;
+  top: -400px;
+}
+.img-for-about {
+  margin-top: 100px;
+  margin-left: 180px;
+}
+.for-our-goal {
+  position: relative;
+  left: 175px;
+  top: -289px;
+  width: 80%;
+  height: 650px;
+  border: 2px solid gold;
+  color: white;
+}
+.our-goal {
+  margin-left: 604px;
+  margin-top: 27px;
+  color: gold;
+  font-size: 50px;
+}
+.paragraph {
+  position: relative;
+  top: -55px;
+  margin-top: 100px;
+  font-size: 25px;
+  line-height: 30px;
+  text-indent: 80px;
+  margin-right: 100px;
+  margin-left: 100px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>JS Function</h3>
+
+<script>
+   
+
+    function getData(color,age){
+        if(age){
+        console.log(`Hi ${color} ${age}`); 
+     }else{
+        console.log(`Hi ${color}`);
+    }
+    }
+getData2("green");
+getData2();
+getData2(undefined,23);
+function getData2(color = "black",age = 21){
+    console.log(`Hi,${color},${age}`);
+}
+
+let result = getData3(12,15,34);
+console.log(result);
+    function getData3(num1,num2,num3){
+        let avg = (num1+num2+num3)/3;
+        return avg;
+    }
+let [name,age] = getData4();
+console.log(name,age);
+    function getData4(){
+        return ["mgmg",21];
+    }
+
+
+const getDat5=() => {
+    const dosomething=()=>{
+        console.log("this is do something");
+    }
+    dosomething();
+    return 'ok';
+}
+let myResult = getDat5();
+console.log(myResult);
+
+
+</script>
+</body>
+</html>

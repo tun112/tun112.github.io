@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  margin-left: 40px;
+  width: 110px;
+  height: 100px;
+  display: block;
+}
+.nav_background {
+  background-color: black;
+}
+.nav_brands {
+  display: inline-block;
+}
+.nav_background ul {
+  float: right;
+}
+.nav_background ul li {
+  margin-right: 40px;
+  padding-top: 20px;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+}
+.brand_name {
+  color: white;
+  margin-left: 50px;
+  font-family: great;
+}
+.nav_background ul li:hover {
+  color: yellow;
+  transform: translate(2px, -2px);
+  transition: 0.3s;
+}
+.background {
+  background-image: url(../Images/beer.jpg);
+  height: 650px;
+}
+
+footer.footer {
+  background-color: black;
+  color: white;
+  height: 90px;
+}
+footer.footer a {
+  float: right;
+  margin-top: 26px;
+  margin-right: 30px;
+  color: gold;
+}
+footer.footer p {
+  margin-top: 35px;
+  display: inline-block;
+  margin-left: 30px;
+}
+/* for background */
+.background-contact {
+  width: 100%;
+  background-color: black;
+
+  color: white;
+}
+/* for title */
+.title {
+  text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+/* for icon */
+
+.icon-background {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.icon-background .contact-info {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-info a {
+  color: gold;
+}
+/* for word */
+.contact-info .word-handler {
+  margin-top: 25px;
+}
+/* message part */
+/* message info */
+.message-background {
+  width: 100%;
+
+  background-color: white;
+}
+.message-info {
+  float: left;
+  width: 50%;
+}
+.message-position {
+  margin-top: 150px;
+  margin-left: 250px;
+}
+.message-position p {
+  margin-top: 30px;
+  line-height: 20px;
+  margin-bottom: 35px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #777575;
+}
+.message-position img {
+  width: 65px;
+  display: inline-block;
+}
+.message-position h3 {
+  display: inline-block;
+}
+.message-position h1 {
+  font-size: 50px;
+}
+.place-for-img {
+  margin-left: 70px;
+  position: relative;
+  top: -60px;
+}
+.place-for-img .p1 {
+  position: relative;
+  top: -25px;
+}
+.place-for-img .p2 {
+  position: relative;
+  top: -40px;
+}
+/* for input info */
+/* for input position */
+.input-info {
+  float: right;
+  width: 50%;
+  margin-top: 150px;
+}
+/* for label */
+.input-info label {
+  display: block;
+}
+/* for input type */
+.input-info input[type="text"],
+.input-info input[type="email"] {
+  margin-right: 15px;
+  border: 1px solid rgb(204, 197, 197);
+  height: 30px;
+  width: 250px;
+}
+.input-info textarea {
+  border: 1px solid rgb(204, 197, 197);
+}
+/* submit button */
+.input-info input[type="submit"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80px;
+  margin-top: 30px;
+  background: rgb(73, 66, 66);
+  color: white;
+  border-radius: 4px;
+}
+/* for label position */
+.input-info label {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+/* name-series */
+.input-info .name-series {
+  font-size: 12px;
+  color: rgb(204, 197, 197);
+  margin-right: 248px;
+  display: inline-block;
+}
+.remove-float {
+  clear: both;
+}
+iframe {
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: 100px;
+}

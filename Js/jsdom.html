@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js DOM</title>
+    <style>
+        .blue{
+            color : blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3 class = "blue"id="myh3">JS<i> DOM</i></h3>
+    <h2  class = "blue"id="myh2">This is H2 Element</h2>
+    <p class = "red"id="myp1">This is a paragraph</p>
+    <p class = "red"id="p"></p>
+    <input class="hello" type="text" name="name" id="name"placeholder = "yourNmae">
+    <button onclick="show()">Click Me For Tag Name</button>
+    <button onclick="showID()">Click me for ID</button>
+    <button onclick="showClass()">Click me for class</button>
+    <script>
+        function showClass(){
+            let mycolor = document.getElementsByClassName("hello");
+            console.log(mycolor[0].innerHTML);
+            let myblue = document.getElementsByClassName('blue');
+            console.log(myblue[0].innerHTML);
+
+            let myred = document.querySelectorAll(".red");
+            console.log(myred[0].innerHTML);
+        }
+        function showID(){
+            let myh3 = document.getElementById('myh3');
+            console.log(myh3.innerHTML);
+            let myh2 = document.querySelector('#myh2');
+            console.log(myh2.innerHTML);
+            let myname = document.getElementsByName('name');
+            console.log(myname.value);
+        }
+        function show(){
+           let myh3 = document.getElementsByTagName('h3');
+           console.log(myh3[0].innerHTML);
+           console.log(myh3[0].innerText);
+            myh3[0].innerHTML = "This is <i>Updated</i> HTML !";
+            
+            let myh2 = document.getElementsByTagName('h2');
+            console.log(myh2);
+            console.log(myh2[0].innerHTML);
+            myh2[0].innerHTML = 'My updated H2';
+
+            let myp = document.getElementsByTagName('p');
+            console.log(myp);
+            console.log(myp[0]);
+            console.log(myp[1]);
+
+            myp[1].innerHTML = myh3[0].innerHTML + myh2[0].innerHTML;
+            
+
+        }
+    </script>
+
+</body>
+</html>

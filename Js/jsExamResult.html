@@ -16,18 +16,41 @@
     <label for="subject1">Subject3</label>
     <input type="number" name="subject3" id="subject3"><br>
     <button onclick="caculate()">caculate</button><br>
-    <label id="result"></label>
+    <label id="total"></label><br>
+    <label id = "result">Result</label>
     <script>
         function caculate(){
+
         let subject1 = parseInt(document.querySelector("#subject1").value);
         let subject2 = parseInt(document.querySelector("#subject2").value);
         let subject3 = parseInt(document.querySelector("#subject3").value);
+        
+            let min = 0 ;
+            let max = 100;
+
+            if((subject1>min&& subject1<max)&&(subject2>min && subject2<max)&&(subject3>min && subject3<max) ){
+
         let sum = subject1 + subject2 + subject3;
-        let ans = "Sum :" + sum;
-        document.querySelector("#result").innerHTML=ans;
+        let ans = "Total :" + sum;
+        document.querySelector("#total").innerHTML=ans;
+
+            
+        let examResult = "";
+        if(subject1>=40 && subject2>=40 && subject3>=40){
+            examResult = "Pass";
+            if(subject1>80 || subject2>80 || subject3>80)
+            {
+                examResult = "Pass with Distinction!";
+            }
+        }else{
+            examResult = "Fail";
+        }
+        document.querySelector("#result").innerHTML=examResult;
+        
+    }else{
+        alert( "Please enter marks value in 0 to 100!!");
+    }
         }
     </script>
-
-
 </body>
 </html>

@@ -1,0 +1,260 @@
+* {
+  color: blueviolet;
+  margin: 0px;
+  padding: 0px;
+}
+h2 {
+  color: red;
+}
+a[target="_blank"] {
+  text-decoration: antiquewhite;
+}
+
+input[type="text"] {
+  outline: none;
+}
+
+#idSelector {
+  color: red;
+}
+.classSelector {
+  color: green;
+  word-spacing: 30px;
+  line-height: 20px;
+}
+
+.desc a {
+  color: red;
+}
+.child > a {
+  color: red;
+}
+
+/*link*/
+a {
+  color: yellow;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: green;
+}
+a:visited {
+  color: black;
+}
+
+div:target {
+  color: red;
+  border: 1px solid black;
+}
+form {
+  width: 80%;
+  margin: auto;
+  transition: 0.9;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  height: 40px;
+  border: 2px;
+  outline: none;
+}
+input[type="number"]s,
+input[type="text"]:focus,
+input[type="numemailber"]:focus {
+  background-color: brown;
+}
+div#dob_select select {
+  width: 30%;
+  height: 35px;
+}
+h2 {
+  text-align: center;
+}
+textarea#Address {
+  width: 100%;
+  height: 85px;
+  border-width: 5px;
+  outline: none;
+}
+input[type="checkbox"]:enabled + label {
+  color: yellow;
+  font-style: normal;
+}
+input[type="checkbox"]:checked + label {
+  color: yellow;
+  font-style: normal;
+}
+input[type="checkbox"]:disabled + label {
+  color: brown;
+  font-style: normal;
+}
+fieldset.fieldset p {
+  text-indent: 40px;
+}
+ul li {
+  margin-left: 40px;
+  width: 80%;
+}
+li:first-child {
+  background-color: blue;
+}
+li:last-child {
+  background-color: yellow;
+}
+li:nth-child(4) {
+  background-color: green;
+}
+p:empty {
+  width: 100%;
+  height: 20px;
+  background-color: green;
+}
+.thankyou {
+  color: honeydew;
+  text-align: center;
+}
+.borderone {
+  border: 2px double red;
+}
+.bordertwo {
+  border-top: 2px solid green;
+  background-color: gray;
+}
+.styleone {
+  border-style: solid;
+}
+.stylethree {
+  border-style: solid double dotted dashed;
+  border-style: solid double;
+}
+.borderwidth {
+  border-width: thin 1px 2px 4px;
+  border-style: solid;
+}
+.marginone {
+  margin: 15px;
+
+  border: 10x solid black;
+}
+.margintwo {
+  margin: 10px 20px;
+}
+.marginthree {
+  margin: 10px 30px 50px;
+}
+.marginfour {
+  /* margin: 10px 30px 40px 50px; */
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+.padding {
+  /* padding: 20px 40px 60px 70px; */
+  padding-top: 20px;
+  padding-right: 40px;
+}
+.google,
+.facebook {
+  border: 1px solid black;
+  display: inline-block;
+  width: 400px;
+}
+.block {
+  border: 1px solid black;
+  display: inline-block;
+  width: 400px;
+}
+div.float_left img {
+  width: 40%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+div.float_right img {
+  width: 40%;
+  float: right;
+}
+.gridone,
+.gridcolumn,
+.gridthree,
+.gridfour,
+.gridfive,
+.gridsix {
+  display: grid;
+  grid-template-columns: auto 200px auto;
+}
+div.gridone div,
+div.gridcolumn div,
+div.gridthree div,
+div.gridfour div,
+div.gridfive div,
+div.gridsix div {
+  color: white;
+  padding: 20px;
+  border: 1px solid white;
+  text-align: center;
+}
+.gridcolumn {
+  grid-column-gap: 45px;
+}
+.gridthree {
+  grid-row-gap: 30px;
+}
+.gridfour {
+  grid-gap: 30px;
+}
+div.gridfive .one {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+div.gridfive .two {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+div.gridsix .one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.relative_parent,
+.absolute_parent,
+.fixed_parent {
+  border: 1px solid red;
+  width: 1000px;
+  height: 500px;
+}
+.relative {
+  width: 400px;
+  height: 100px;
+  border: 1px solid black;
+  position: relative;
+  left: 100px;
+  top: 400px;
+}
+.absolute {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  position: absolute;
+  top: 100px;
+  left: 400px;
+}
+.fixed {
+  top: 50px;
+  left: 1000px;
+  position: fixed;
+}
+.online {
+  font-family: "Ephesis", cursive;
+}
+@font-face {
+  src: url(../Ephesis/Ephesis-Regular.ttf);
+  font-family: ar;
+}
+.offline {
+  font-family: ar;
+}

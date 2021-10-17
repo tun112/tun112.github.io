@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student list</title>
+</head>
+<body>
+    <h3>Student Register</h3>
+    <label for="name">Name</label>
+    <input type="text" id = "name"><br>
+    <label for="city">City</label>
+    <input type="text" name="" id="city"><br>
+    <button onclick="register()"> Register</button>
+   
+    <h3>Student List</h3>
+    
+
+    <table border="1" cellpadding = "10">
+        <thead>
+                <tr>
+                    <th>NO.</th>
+                    <th>Name</th>
+                    <th>City</th>
+                </tr>
+        </thead>
+        <tbody id = "studentlist">
+
+        </tbody>
+    </table>
+
+   <script>
+       let studentlist = [];
+       function register(){
+           
+       let name = document.querySelector("#name").value;
+       let city = document.querySelector("#city").value;
+        let i = 1;
+        let html = '';
+       let student = [name,city];
+       studentlist.push(student);
+       console.log(studentlist);
+      studentlist.forEach(
+           (element)=>{
+              console.log(element)
+           
+            let ss = element[0];
+            let ff = element[1];
+
+            html +=  `
+            <tr>
+                <td>${i}</td>
+                <td>${ss}</td>
+                <td>${ff}</td> 
+            </tr>
+                `;
+
+i++; 
+
+           }  
+       )
+        document.querySelector("#studentlist").innerHTML = html;
+       }
+      
+   </script>
+
+
+</body>
+</html>
