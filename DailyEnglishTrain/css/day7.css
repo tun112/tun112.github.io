@@ -1,0 +1,26 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+.header {
+  text-align: center;
+  text-decoration: underline;
+  color: red;
+  font-size: 40px;
+  margin: 60px;
+}
+.smallHeader {
+  margin: 40px;
+  color: red;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+}
+img {
+  align-items: center;
+}
+span {
+  color: red;
+}
